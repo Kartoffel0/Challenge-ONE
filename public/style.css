@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    background: #F3F5FC;
+    width: 100%;
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+#content {
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    justify-content: space-between;
+}
+
+#sideBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+    height: auto;
+    margin: 2%;
+}
+
+#inputArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 2%;
+}
+
+#inputArea {
+    padding-top: 5%;
+}
+
+#inputField {
+    width: 100%;
+    height: 85%;
+    color: #0A3871;
+}
+
+#inputField textarea {
+    resize: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #0A3871;
+    background: none;
+}
+
+#inputField textarea::placeholder {
+    color: #0A3871;
+}
+
+#inputWarning {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: #495057;
+}
+
+#inputWarning p {
+    margin-left: 0.5rem;
+}
+
+#inputButtons {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+#inputButtons button, #outputData button {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+
+#encryptBtn {
+    background: #0A3871;
+    color: white;
+    border: none;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    margin-right: 0.75rem;
+}
+
+#decryptBtn {
+    background: none;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    margin-left: 0.75rem;
+}
+
+#outputArea {
+    width: 30%;
+    height: auto;
+    margin: 2%;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+#outputNoData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#noDataText {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#noDataText h1 {
+    font-size: 1.5rem;
+    color: #343A40;
+    margin-bottom: 1rem;
+}
+
+#noDataText p {
+    color: #495057;
+}
+
+#outputData {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+#outputData textarea {
+    resize: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: #495057;
+    background: none;
+}
+
+#copyOutputBtn {
+    background: none;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    margin-top: 2rem;
+}
