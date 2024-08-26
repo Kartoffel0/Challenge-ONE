@@ -28,6 +28,7 @@ function processText(operation) {
         outputTextarea.value = text;
         outputNoData.style.display = 'none';
         outputData.style.display = 'flex';
+        copybtn.innerText = 'Copiar';
     }
 }
 
@@ -43,4 +44,4 @@ function encrypt() {
 
 encryptBtn.addEventListener('click', () => {processText(0)});
 decryptBtn.addEventListener('click', () => {processText(1)});
-copybtn.addEventListener('click', () => {navigator.clipboard.writeText(outputTextarea.value)});
+copybtn.addEventListener('click', () => {navigator.clipboard.writeText(outputTextarea.value);copybtn.innerText = 'Copiado!';});
